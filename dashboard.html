@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library Dashboard</title>
+    <style>
+        body {
+            background-color: #e6f2ff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        .header {
+            background-color: steelblue;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .logout {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: red;
+            color: white;
+            padding: 8px 14px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            margin: 40px auto;
+            width: 60%;
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px gray;
+            text-align: center;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 25px;
+            margin: 10px;
+            background-color: steelblue;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        .button:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Library Management Dashboard</h1>
+        <a href="logout.php" class="logout">Logout</a>
+    </div>
+
+    <div class="container">
+        <h2>Welcome to the Dashboard</h2>
+        <a href="addbook.html" class="button">Add Book</a>
+        <a href="viewbooks.php" class="button">View Books</a>
+        <a href="issuebook.html" class="button">Issue Book</a>
+        <a href="returnbook.html" class="button">Return Book</a>
+    </div>
+
+</body>
+</html>
