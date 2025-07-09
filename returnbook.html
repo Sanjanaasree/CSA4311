@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Return Book</title>
+    <style>
+        body {
+            background-color: #dceeff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .form-container {
+            background-color: white;
+            width: 30%;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        input[type="text"],
+        input[type="submit"] {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #999;
+        }
+
+        input[type="submit"] {
+            background-color: steelblue;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+
+        input[type="submit"]:hover {
+            background-color: darkblue;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            color: steelblue;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Return Book</h2>
+        <form action="returnbook.php" method="POST">
+            <input type="text" name="bookid" placeholder="Enter Book ID to return" required><br>
+            <input type="submit" value="Return Book">
+        </form>
+        <a href="dashboard.html">Back to Dashboard</a>
+    </div>
+
+</body>
+</html>
