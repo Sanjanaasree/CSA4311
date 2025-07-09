@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: "Times New Roman";
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .library {
+            background: white;
+            padding: 20px;
+            width: 30%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px grey;
+        }
+        input[type="email"],
+        input[type="password"] {
+            width: 90%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: steelblue;
+            color: white;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="library">
+        <h2>User Login</h2>
+        <form action="login.php" method="POST">
+            <input type="email" name="email" placeholder="Email ID" required><br>
+            <input type="password" name="password" placeholder="Password" required><br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+</html>
